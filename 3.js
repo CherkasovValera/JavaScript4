@@ -13,5 +13,18 @@
 массиве тройки лежат под индексами 1 и 4. Если троек в сгенерированном массиве
 не окажется, значит нужно будет вывести пустой массив.
 */
-
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const arr = [];
+const array = [];
+for (let i = 0; i < 5; i++) {
+  arr.push(Math.trunc(Math.random() * 10));
+}
+console.log(arr);
+console.log(` Сумма ${arr.reduce((acc, num) => acc + num, 0)}`);
+const minValue = Math.min.apply(null, arr);
+console.log(`Минимум ${minValue}`);
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] === 3) {
+    array.push(i);
+  }
+}
+console.log(array);
