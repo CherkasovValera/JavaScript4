@@ -11,5 +11,10 @@ xxx
 xxxx
 xxxxx
 */
+for (let i = 0; i < 21; i++) {
+  for (let j = 0; j < i; j++) {
+    console.log("x");   
+  }
+  console.log('');
+}
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
